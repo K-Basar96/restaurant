@@ -3,8 +3,7 @@ import React from 'react';
 const SearchResult = (props) => {
 	return (
 		<>
-			{props.menuList
-				.filter((val) => {
+			{props.menuList.filter((val) => {
 					if (props.search === '') {
 						return val;
 					} else if (val.name.toLowerCase().includes(props.search.toLowerCase())) {
